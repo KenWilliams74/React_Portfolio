@@ -1,9 +1,17 @@
 import React from "react";
+import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
 
 function Footer() {
-    return <div>
-        <h1>There</h1>
-    </div>
-};
+    return (
+    <Typography variant="body2" color="textSecondary" align="center">
+    {'Copyright © '}
+    <Link color="inherit" href="https://github.com/KenWilliams74" target="_blank">
+      Ken Williams
+    </Link>{' '}
+    {2020}
+    {'.'}
+  </Typography>
+    )};
 
 export default Footer;
